@@ -12,22 +12,22 @@ public class ScooterRepository {
 		scooters = new ArrayList<>();
 
 		Scooter sctr1 = new Scooter();
-		sctr1.setScooterId("SCTR001001");
+		sctr1.setScooterId(001001);
 		sctr1.setBatteryLvl(90);
 
 
 		Scooter sctr2 = new Scooter();
-		sctr2.setScooterId("SCTR001002");
+		sctr2.setScooterId(001002);
 		sctr2.setBatteryLvl(60);
 
 
 		Scooter sctr3 = new Scooter();
-		sctr3.setScooterId("SCTR001003");
+		sctr3.setScooterId(001003);
 		sctr3.setBatteryLvl(0);
 
 
 		Scooter sctr4 = new Scooter();
-		sctr4.setScooterId("SCTR001004");
+		sctr4.setScooterId(001004);
 		sctr4.setBatteryLvl(82);
 
 		scooters.add(sctr1);
@@ -41,10 +41,12 @@ public class ScooterRepository {
 		return scooters;
 	}
 
-	public Scooter getScooter(String scooterId) {
+	public Scooter getScooter(int scooterId) {
 
 
 		for(Scooter sctr : scooters) {
+			System.out.println(scooterId);
+			System.out.println(sctr.getScooterId());
 			if(sctr.getScooterId() == scooterId)
 				return sctr;
 		}

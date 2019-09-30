@@ -5,13 +5,13 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class Scooter {
 
-	private String scooterId;
+	private int scooterId;
 	private int batteryLvl;
 	
-	public String getScooterId() {
+	public int getScooterId() {
 		return scooterId;
 	}
-	public void setScooterId(String scooterId) {
+	public void setScooterId(int scooterId) {
 		this.scooterId = scooterId;
 	}
 	public int getBatteryLvl() {
