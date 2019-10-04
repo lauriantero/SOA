@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="scooterApp:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>scooterApp</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="scooterApp.war">
+      <element id="artifact" artifact-name="scooterApp:war exploded" />
+    </root>
+  </artifact>
+</component>
