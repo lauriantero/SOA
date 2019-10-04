@@ -21,6 +21,13 @@ import com.SOA.demo3.scooterApp.service.UserService;
 @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
 public class UserResource {
 
+	public String getCurrentUser() {
+		return currentUser;
+	}
+
+	@GET
+	public currentUser()
+
 	private UserService userService = new UserService();
 	
 	
